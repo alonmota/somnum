@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--darker-hex: #00948b;
+	--dark-hex: #00aa9d;
+	--light-hex: #e7fefb;
+	--neutral-hex: #e7fefb;
+}
+
+body {
+	color: var(--neutral-hex);
+	background: linear-gradient(to bottom, transparent, var(--darker-hex))
+		var(--dark-hex);
+}
