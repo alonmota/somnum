@@ -9,10 +9,12 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				darker: '#00948b',
-				dark: '#00AA9D',
-				light: '#E7FEFB',
-				neutral: '#E7FEFB',
+				green1: '#143c39',
+				green2: '#0e2a28',
+				light1: '#f5ffff',
+				light2: '#d5fffc',
+				dark1: '#3c2314',
+				dark2: '#2a180e',
 			},
 		},
 	},
