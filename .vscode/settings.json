@@ -2,5 +2,18 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-  "eslint.validate": ["javascript"],
+	"eslint.validate": [
+		"javascript"
+	],
+	"cSpell.words": [
+		"tailwindcss"
+	],
+	"tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css"
+	},
+	"editor.quickSuggestions": {
+			"strings": true
+	}
  }

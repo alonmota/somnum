@@ -9,6 +9,29 @@
 	--neutral-hex: #e7fefb;
 }
 
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: theme(colors.light1);
+	
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.5);
+	border: 1px solid theme(colors.light1);
+	border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: theme(colors.dark1);
+}
+
 body {
 	color: var(--neutral-hex);
 	background: linear-gradient(to bottom, transparent, var(--darker-hex))

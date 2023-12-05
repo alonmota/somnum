@@ -11,8 +11,22 @@ export default function Welcome() {
 			}}
 		>
 			<div className="flex flex-col items-center">
-				<h2 className="text-6xl text-light1	 drop-shadow-lg">Bem vindo a SOMNUM</h2>
-				<p className="text-2xl text-light1  drop-shadow-lg">Serviço de anestesia a domicílio</p>
+				<h2
+					className="text-6xl text-light1"
+					style={{
+						textShadow: '2px 2px #2a180e'
+					}}
+				>
+					Bem vindo a SOMNUM
+				</h2>
+				<p 
+					className="text-2xl text-light1 drop-shadow-lg"
+					style={{
+						textShadow: '2px 2px #2a180e'
+					}}
+				>
+					Serviço de anestesia a domicílio
+				</p>
 			</div>
 
 			<div className="mt-12">

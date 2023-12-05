@@ -3,6 +3,7 @@
 import { APP_NAME } from '@/constants/values';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
 
 export default function HomeLayout({
 	children,
@@ -33,12 +34,17 @@ export default function HomeLayout({
 
 			{children}
 			
-			<section className="flex min-w-full flex-row items-center justify-evenly bg-light1 text-darker">
-				Links
+			<section className="flex min-w-full flex-col items-start py-2 px-24 justify-evenly bg-gray-200 text-dark1 text-sm">
+				<h3 className='font-bold'>Nossas Redes Sociais</h3>
+				<div className='flex flex-row'>
+					<a className='flex flex-row items-center pr-8 py-2' href="https://www.instagram.com/" target='_blank'> <FaInstagram /> <p className='ml-1'>@SOMNUM</p> </a>
+					<a className='flex flex-row items-center pr-8 py-2' href="https://www.instagram.com/" target='_blank'> <FaFacebook /> <p className='ml-1'>@SOMNUM</p> </a>
+					<a className='flex flex-row items-center pr-8 py-2' href="https://www.instagram.com/" target='_blank'> <FaTwitter /> <p className='ml-1'>@SOMNUM</p> </a>
+				</div>
 			</section>
 
-			<footer className="flex min-w-full flex-row items-center justify-evenly">
-				end
+			<footer className="flex min-w-full flex-row items-start justify-start px-24 py-2 text-sm">
+				© SOMNUM
 			</footer>
 		</main>
 	);
