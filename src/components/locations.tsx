@@ -11,16 +11,16 @@ export default function Locations() {
 	]
 	return (
 		<section 
-			className="flex flex-col min-w-full items-center justify-evenly p-24"
+			className="flex flex-col min-w-full min-h-fit items-start justify-start md:items-center md:justify-start p-6 md:p-24"
 			style={{
 				background: 'radial-gradient(circle, rgba(0,148,139,1) 0%, rgba(0,85,80,1) 100%)'
 			}}
 		>
-			<h2 className="text-4xl mb-10">Onde atuamos</h2>
-			<div className="flex flex-row justify-between items-center">
+			<h2 className="text-4xl mb-4 md:mb-12">Onde atuamos</h2>
+			<div className="flex flex-row flex-wrap justify-start md:justify-center items-center mb-4 md:mb-0">
 				{
 					locations.map((location) => 
-						<div key={location.key} className="min-w-fit border-solid rounded-lg px-4 py-2 m-2 hover:bg-dark1">{location.name}</div>
+						<div key={location.key} className="min-w-[50%] md:min-w-[120px] border-solid rounded-lg px-4 py-2	 hover:bg-dark1">{location.name}</div>
 					)
 				}
 			</div>
