@@ -16,7 +16,9 @@ const config: Config = {
 				light1: '#f5ffff',
 				light2: '#d5fffc',
 				dark1: '#3c2314',
-				dark2: '#2a180e',
+				dark2: '#8e3469',
+				beige: '#F5F1E3',
+				darkGreen: '#006c64'
 			},
 		},
 	},

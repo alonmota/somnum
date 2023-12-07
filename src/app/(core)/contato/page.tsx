@@ -33,7 +33,7 @@ export default function Contact() {
 						className='basis-1/2 grow h-auto min-w-[200px] min-h-[150px] pr-2 mb-4'
 					>
 						<Link
-							className='group flex flex-col min-h-full min-w-full bg-light1 text-dark1 rounded-sm hover:shadow-xl'
+							className='group flex flex-col min-h-full min-w-full bg-light1 text-dark2 rounded-sm hover:shadow-xl'
 							href={`//api.whatsapp.com/send?phone=${COMPANY_NUMBER.replace(/[^\w\s]/gi, '')}&text=${DEFAULT_MESSAGE}`}
 							target='_blank'
 						>
@@ -56,7 +56,7 @@ export default function Contact() {
 						className='basis-1/2 grow h-auto min-w-[200px] min-h-[150px] pr-2 mb-4'
 					>
 						<Link
-							className='group flex flex-col min-h-full min-w-full bg-light1 text-dark1 rounded-sm hover:shadow-xl'
+							className='group flex flex-col min-h-full min-w-full bg-light1 text-dark2 rounded-sm hover:shadow-xl'
 							href={`mailto:${COMPANY_EMAIL}?subject=${DEFAULT_SUBJECT}&body=${DEFAULT_MESSAGE}`}
 							target='_blank'
 						>
@@ -76,7 +76,7 @@ export default function Contact() {
 					
 				</div>
 			</section>
-			<section
+			{/* <section
 				className="flex flex-col min-w-full min-h-fit items-start justify-start md:items-center md:justify-start p-6 md:p-24 bg-light1 text-dark2"
 				style={{
 					background: 'radial-gradient(circle, #f5ffff 0%, #d5fffc 100%)'
@@ -87,7 +87,7 @@ export default function Contact() {
 				<Accordion className='bg-white shadow-md'>
 					{ faq.map((pergunta) => 
 						<AccordionItem key={pergunta.key} aria-label={pergunta.question} title={pergunta.question}>
-							<p className='text-sm text-opacity-75 pl-4 pb-4'>
+							<p className='text-sm text-dark2 text-opacity-75 pl-4 pb-4'>
 								{pergunta.answer}
 							</p>
 						</AccordionItem>
@@ -95,7 +95,7 @@ export default function Contact() {
 					)}
 				</Accordion>
 					
-			</section>
+			</section> */}
 		</>
 	);
 }

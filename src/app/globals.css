@@ -34,6 +34,6 @@
 
 body {
 	color: var(--neutral-hex);
-	background: linear-gradient(to bottom, transparent, var(--darker-hex))
-		var(--dark-hex);
+	background: linear-gradient(to bottom, transparent, var(--darker-hex)) var(--dark-hex);
+	font-family: serif !important;
 }

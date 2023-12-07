@@ -1,9 +1,10 @@
 'use client'
 
 import { APP_NAME } from '@/constants/values';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 export default function HomeLayout({
 	children,
@@ -17,8 +18,8 @@ export default function HomeLayout({
 	]
 	return (
 		<main className="flex min-h-screen w-screen flex-col items-start md:items-stretch justify-start md:justify-between">
-			<header className="flex flex-row w-screen justify-start md:justify-evenly p-4 bg-light1 text-dark1">
-				<h1 className="basis-1/4 font-sans text-lg font-semibold hover:text-dark1">
+			<header className="flex flex-row w-screen justify-start md:justify-evenly p-4 bg-light1 text-dark2">
+				<h1 className="basis-1/4 font-sans text-lg font-semibold hover:text-dark2">
 					{APP_NAME}
 				</h1>
 				<nav className="items-stretch basis-1/4 hidden md:flex">
@@ -34,12 +35,15 @@ export default function HomeLayout({
 
 			{children}
 			
-			<section className="flex min-w-full flex-col items-start py-2 px-4 md:px-24 justify-evenly bg-dark2 text-light1 text-sm">
+			<section className="flex min-w-full flex-col items-start py-2 px-4 md:px-24 justify-evenly bg-dark2 text-light1 text-sm"
+				style={{
+					background: 'radial-gradient(circle, rgba(0,118,109,1) 0%, rgba(0,85,80,1) 100%)'
+				}}
+			>
 				<h3 className='font-bold'>Nossas Redes Sociais</h3>
 				<div className='flex flex-row flex-wrap'>
-					<a className='flex flex-row items-center pr-8 py-2' href="https://www.instagram.com/" target='_blank'> <FaInstagram /> <p className='ml-1'>@SOMNUM</p> </a>
-					<a className='flex flex-row items-center pr-8 py-2' href="https://www.instagram.com/" target='_blank'> <FaFacebook /> <p className='ml-1'>@SOMNUM</p> </a>
-					<a className='flex flex-row items-center pr-8 py-2' href="https://www.instagram.com/" target='_blank'> <FaTwitter /> <p className='ml-1'>@SOMNUM</p> </a>
+					<a className='flex flex-row items-center pr-8 py-2' href="https://www.instagram.com/anestesiasomnum" target='_blank'> <FaInstagram /> <p className='ml-1'>@anestesiasomnum</p> </a>
+					<a className='flex flex-row items-center pr-8 py-2' href="https://www.instagram.com/anestesiasomnum" target='_blank'> <FaWhatsapp /> <p className='ml-1'>{'(61) 98188-8886'}</p> </a>
 				</div>
 			</section>
 

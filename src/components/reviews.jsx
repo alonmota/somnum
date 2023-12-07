@@ -18,7 +18,7 @@ export default function Reviews() {
 							<div 
 								className="min-w-full min-h-full bg-white shadow-lg border-8 border-white rounded-sm px-4 py-4 m-2 overflow-y-auto"
 							>
-								<p className="italic">&ldquo;{review.comment}&rdquo;</p>
+								<p className="italic text-justify">&ldquo;{review.comment}&rdquo;</p>
 								<p className="self-end opacity-25">{review.name}</p>
 							</div>
 						</div>

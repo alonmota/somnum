@@ -20,7 +20,7 @@ export default function Locations() {
 			<div className="flex flex-row flex-wrap justify-start md:justify-center items-center mb-4 md:mb-0">
 				{
 					locations.map((location) => 
-						<div key={location.key} className="min-w-[50%] md:min-w-[120px] border-solid rounded-lg px-4 py-2	 hover:bg-dark1">{location.name}</div>
+						<div key={location.key} className="min-w-[50%] md:min-w-[120px] border-solid rounded-lg px-4 py-2	 hover:bg-dark2">{location.name}</div>
 					)
 				}
 			</div>
